@@ -1,11 +1,21 @@
 # Basic-Linux-Drive-Partition-Schemes
 
-[Source:](https://www.youtube.com/watch?v=71msHISl9kQ)
+[YouTube cideo Source: AJ Reissig — Basic Linux Drive Partion Schemes](https://www.youtube.com/watch?v=71msHISl9kQ)
 
-## Partion Scheme for SSD
+## Partition Scheme for SSD
 
+| Capacity in MiB | Mount Point | Partition | Starting Point | Filesystem | Extended Partition |
+| --- | --- | --- | --- | --- | --- |
+| 4096 | Unallocated | Unallocated | Unallocated | Unallocated | Unallocated |
+| 61440 | / | Primary | Beginning | Ext4 | N/A | Logical |
+| 16384 | /swap | Primary | Beginning | N/A | Logical |
+| What's left | /home | Primary | Beginning | Ext4 | N/A |
 
-## Partion Scheme for HDD
+![SSD Scheme](ssd.png)
+
+<hr>
+
+## Partition Scheme for HDD
 
 | Capacity in MiB | Mount Point | Partition | Starting Point | Filesystem | Extended Partition |
 | --- | --- | --- | --- | --- | --- |
